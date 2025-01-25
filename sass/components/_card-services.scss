@@ -1,0 +1,143 @@
+.card-services{
+     -moz-perspective: 150rem;
+     perspective: 150rem;
+    position: relative;
+     height: 32rem;
+   &__side{
+     height: 32rem;
+     background-color: red;
+     transition: all 1.5s ;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     backface-visibility: hidden;
+     border-radius: 3px;
+     box-shadow: 0 1rem 1.5rem rgba($black-color,.5);
+     overflow: hidden;
+
+     &--front{
+          background-color: white;
+          position: relative;
+     }
+
+     &--back{
+          transform: rotateY(180deg);
+          &-1{
+               background-image: linear-gradient(to right bottom,
+                rgba($secondary-color-light,.5), 
+               rgba($secondary-color-dark,.5)), url(/assets/images/sea.jpg);
+               background-size: cover;
+               background-position: center;
+          }
+     }
+
+    
+   }
+
+   &:hover &__side--front{
+     transform: rotateY(-180deg);
+   }
+
+   &:hover &__side--back{
+     transform: rotateY(0deg);
+   }
+
+&__img{
+          background-image: linear-gradient(to right bottom,
+           rgba($secondary-color-light,.5), 
+          rgba($color-gray-dark,.5)),url(/assets/images/sea.jpg);
+          height: 12rem;
+          background-size: cover;
+          background-position: center;
+          background-blend-mode:hard-light;
+     }
+     &__heading{
+          font-size: 2.4rem;
+          color: $color-gray-light;
+          font-weight: 200;
+          text-align: left;
+          text-transform: uppercase;
+           position: absolute;
+          top: 4.3rem;
+          left: 0;
+          width: 20%;
+     }
+
+     &__span-heading{
+          color: $white-color;
+          padding: 1rem 1.5rem;
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+          &--1{
+          background-image: linear-gradient(to right bottom,
+           rgba($secondary-color-light,.5),
+            rgba($color-gray-dark,.5));
+          }
+     }
+
+     &__details{
+          padding: 2rem;
+          ul{
+          list-style: none;
+          font-size: 1.5rem;
+          width: 70%;
+          margin: 0 auto;
+         // height: a;
+          li{
+               text-align:left;
+               color: $color-gray-light;
+               font-weight: 400;
+               text-transform: uppercase;
+               padding: .5rem;
+               i{
+                    color: inherit;
+                    font-size: 2rem;
+                    display: inline-block;
+                    color: inherit;
+                    margin-right: 1rem;
+               }
+          }
+          }
+     }
+
+
+     &__price-details{
+          //text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: 50%;
+          //margin: 0 auto;
+     }
+
+     &__price-box{
+          font-size: 3rem;
+          color: $white-color;
+          font-weight: 600;
+          text-transform: uppercase;
+     }
+     &__price{
+         // font-size: 6rem;
+          margin-top: 1rem;
+          i{
+               margin-right: .5rem;
+               display: inline-block;
+               //font-size: 3.5rem;
+          }
+     }
+
+     &__level{
+          margin-bottom: 1rem;
+     }
+   
+}
+
+
+.gym-image{
+     img{
+          width: 100%;
+          height: 25rem;
+     }
+}
