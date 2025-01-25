@@ -1,0 +1,37 @@
+.content{
+   position: relative;
+   
+   &__photo{
+    width: 65%;
+    position: absolute;
+    box-shadow:0 .5rem 1rem rgba($black-color,.6);
+    object-fit: cover;
+    border-radius: 3px;
+   //  outline-offset: .5rem;
+    transition: all .3s ease;
+    cursor: pointer;
+    z-index: 10;
+    &--p1{
+      top: 2rem;
+      left: 0;
+  }
+  &--p2{
+      top: 5rem;
+      right: 0rem;
+  }
+  &--p3{
+      top: 9rem;
+      left: 20%;
+  }
+   &:hover{
+      // outline: .5rem  solid $secondary-color-light;
+      z-index: 20;
+      transform: scale(1.03);
+   }
+   }
+&:hover &__photo:not(:hover){
+  transform: scale(.95);
+}
+}
+
+

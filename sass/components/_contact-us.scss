@@ -1,0 +1,68 @@
+.contact-us-form{
+     width: 80%;
+     margin: 0 auto;
+     &__group{
+          &:not(:last-child){
+               margin-bottom: 2.5rem;
+          }
+     }
+
+     &__input{
+          width: 100%;
+          display: block;
+          padding: 1.5rem 2rem;
+          font-size: 1.6rem;
+         font-weight: 600;
+         border: none;
+         border-radius: 3px;
+         color:$color-gray-light;
+         border-bottom: 2px solid transparent;
+           
+         &:focus{
+          outline: none;
+          border-bottom-color: $secondary-color-light;
+          box-shadow: 0 3px 4px rgba($black-color,.5)
+         }
+
+         &:focus:invalid{
+          border-bottom-color:$primary-color-dark ;
+         }
+         /* for the texts in input placeholder */
+          &::-webkit-input-placeholder{
+               color: $color-gray-light;
+          }
+     }
+     &__label{
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-weight: 600;
+          margin-left: 2rem;
+       
+          /*display block to allow margin-top to work => 
+          remember label is inline element ,margin, padding top, bottom does not work */
+          display: block;
+          margin-top: 1rem;
+          color:$color-gray-light;
+          transition: all .3s ;
+     }
+
+     &__input:placeholder-shown + &__label{
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-4.3rem);
+     }
+
+     &__textarea{
+          border: none;
+          box-shadow: 0 .5rem 2rem rgba($black-color,.5);
+          padding: 1.5rem;
+          font-size: 2rem;
+          font-weight: 100;
+          color: $color-gray-light;
+          border-radius: 3px;
+          overflow: hidden;
+          display:block;
+          width: 100%;
+          height: 46vh;
+     }
+}

@@ -1,0 +1,30 @@
+//imports abstracts files
+@import'abstracts/mixins';
+@import'abstracts/variables';
+
+
+//imports base files
+@import "base/animations";
+@import'base/base';
+@import'base/typography';
+@import'base/utilities';
+
+
+//imports components files
+@import'components/navbar';
+@import'components/home-content';
+@import'components/buttons';
+@import'components/partners';
+@import'components/card';
+@import'components/about-us';
+@import'components/contact-us';
+@import'components/card-services';
+@import'components/footer';
+
+
+//imports layout files
+@import'layout/header';
+@import'layout/grid';
+
+//imports pages files 
+@import'pages/home';

@@ -1,0 +1,15 @@
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,
+    rgba($primary-color-light,.6),
+     rgba($primary-color-dark,.6),),url(/assets/images/header-2x-lager.jpg);
+     background-position: center;
+     background-size: cover;
+    position: relative;
+    &__heros{
+       @include positionCentered;
+        text-align: center;
+    }
+
+    
+}
