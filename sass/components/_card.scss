@@ -1,0 +1,51 @@
+.card{
+     max-height: 32rem;
+     transition: all .4s ease-in-out;
+     &__content{
+          background-color: $white-color-a;
+          box-shadow: 0 1rem 2rem rgba($black-color, .15);
+           border-radius: 3px;
+           max-height: 32rem;
+           overflow: hidden;
+     }
+     &__picture{
+          height: 14rem;
+          background-position: center;
+          background-size: cover;
+          
+          &--p1{
+               background-image: url('/assets/images/massage-2x-large.jpg');
+          }
+     }
+
+    &__details{
+     padding:1rem 1.5rem ;
+     color: $color-gray-light;
+     //background-color:$secondary-color-light;
+    }
+
+     &__heading{
+          font-size: 2rem;
+          font-weight: 300;
+          text-transform: uppercase;
+          text-align: left;
+          margin-bottom: 1rem;
+     }
+
+     &__text{
+          font-size: 1.6rem;
+          font-weight: 200;
+          text-transform: capitalize;
+          text-align:left;
+
+     }
+
+     &__title{
+          text-transform: uppercase;
+          font-weight: 700;
+          margin-bottom: .5rem;
+     }
+    &:hover {
+     transform:translateY(-.4rem) scale(1.05);
+    }
+}
